@@ -1,0 +1,50 @@
+
+.createProject {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #191B1D;
+    height: 50%;
+    width: 20%;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: inset 0px 2px 100px #3e4247;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.projhide {
+    display: flex;
+}
+
+#projDescriptionId, #projTitleId, #projDuedate {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1.5px solid black;
+    height: 2rem;
+    text-align: center;
+    font-size: medium;
+}
+
+#projDescriptionId:focus, #projTitleId:focus, #projDuedate:focus {
+    outline: none;
+}
+
+#addProj {
+    font-size: medium;
+    width: 70%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    padding:0.7rem 0 0.7rem 0;
+
+    
+}
+
+#addProj:hover {
+    background-color: #c2c2c2;
+    transition: 0.5s;
+}
