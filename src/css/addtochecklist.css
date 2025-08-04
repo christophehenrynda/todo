@@ -1,0 +1,42 @@
+.create-check-list {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #191B1D;
+    height: 50%;
+    width: 20%;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: inset 0px 2px 100px #3e4247;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+.checkhide {
+    display: flex;
+}
+
+#checkListTitleId, #checkListDuedate {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1.5px solid black;
+    height: 2rem;
+    text-align: center;
+    font-size: medium;
+}
+
+#checkListTitleId:focus, #checkListDuedate:focus {
+    outline: none;
+}
+
+#addCheckList {
+    font-size: medium;
+    width: 70%;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    padding:0.7rem 0 0.7rem 0;
+
+}

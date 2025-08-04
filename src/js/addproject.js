@@ -21,6 +21,7 @@ const addproject = () => {
     const dueDateLabel = document.createElement("input");
     dueDateLabel.type = "date";
     dueDateLabel.id = "projDuedate";
+    dueDateLabel.placeholder = "Due date";
 
     const addProjBtn = document.createElement("button");
     addProjBtn.id = "addProj";

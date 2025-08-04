@@ -1,6 +1,6 @@
 import "../css/home.css";
 import addproject from "./addproject";
-
+import addCheckList from "./addtochecklist";
 const home = () => {
 
     const body = document.querySelector(".main");
@@ -43,8 +43,10 @@ const home = () => {
                 projDiv.addEventListener('click', (event) => {
                     //check if button exists in checklist section
                     const existBtn = document.querySelector(".checklist-add-btn")
-                    if (ChecklistSection.contains(existBtn)){
+                    const existCard = document.querySelector(".create-check-list")
+                    if (ChecklistSection.contains(existBtn) || body.contains(existCard)){
                        existBtn.remove();
+                       existCard.remove();
                     }
                     
                     // add new button
@@ -52,7 +54,7 @@ const home = () => {
                     addToChecklistBtn.className = "checklist-add-btn";
                     addToChecklistBtn.innerHTML = "Add To Checklist";
                     addToChecklistBtn.style.background = colorsArr[randomIndex];
-                    
+                    addToChecklistBtn.addEventListener("click", addCheckList());
                     ChecklistSection.appendChild(addToChecklistBtn);
 
                 })
